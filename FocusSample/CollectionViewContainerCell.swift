@@ -51,7 +51,7 @@ class CollectionViewContainerCell: UICollectionViewCell, UICollectionViewDataSou
         guard let cell = cell as? DataItemCollectionViewCell else { fatalError("Expected to display a DataItemCollectionViewCell") }
         let item: DataItem = dataItems[(indexPath as NSIndexPath).row] as! DataItem
         cell.imageView.image = item.image
-        cell.label.text = "Miedito"
+        cell.label.text = "Destacado"
         // Configure the cell.
         //cellComposer.compose(cell, withDataItem: item)
     }

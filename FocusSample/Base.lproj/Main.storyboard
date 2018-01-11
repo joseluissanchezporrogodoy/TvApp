@@ -7,6 +7,7 @@
         <deployment identifier="tvOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -18,21 +19,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="l38-wr-L1t">
-                            <size key="itemSize" width="1920" height="378"/>
+                            <size key="itemSize" width="1920" height="533"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="30" maxX="0.0" maxY="30"/>
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CollectionViewContainerCell" id="Lp0-Qh-59D" customClass="CollectionViewContainerCell" customModule="UIKitCatalog" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="30" width="1920" height="378"/>
+                                <rect key="frame" x="0.0" y="30" width="1920" height="533"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="1920" height="378"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="1920" height="533"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <collectionView multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="CFG-tA-eT6">
-                                            <rect key="frame" x="90" y="60" width="1740" height="318"/>
+                                            <rect key="frame" x="98" y="208" width="1724" height="221"/>
                                             <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="50" minimumInteritemSpacing="0.0" id="LXG-cB-gfR">
                                                 <size key="itemSize" width="308" height="378"/>
                                                 <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -41,18 +42,18 @@
                                             </collectionViewFlowLayout>
                                             <cells>
                                                 <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="DataItemCell" id="Fbo-xO-olT" customClass="DataItemCollectionViewCell" customModule="FocusSample" customModuleProvider="target">
-                                                    <rect key="frame" x="50" y="-30" width="308" height="378"/>
+                                                    <rect key="frame" x="50" y="-79" width="308" height="378"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                                         <rect key="frame" x="0.0" y="0.0" width="308" height="378"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                         <subviews>
-                                                            <imageView opaque="NO" multipleTouchEnabled="YES" contentMode="scaleAspectFill" fixedFrame="YES" image="Iceland 1.jpg" adjustsImageWhenAncestorFocused="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hKf-MY-eTK">
-                                                                <rect key="frame" x="0.0" y="0.0" width="308" height="308"/>
+                                                            <imageView opaque="NO" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" image="Amy_POS_L" translatesAutoresizingMaskIntoConstraints="NO" id="hKf-MY-eTK">
+                                                                <rect key="frame" x="42" y="0.0" width="225" height="330"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             </imageView>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gvB-OJ-JRP">
-                                                                <rect key="frame" x="0.0" y="343" width="308" height="35"/>
+                                                                <rect key="frame" x="0.0" y="365" width="308" height="35"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -71,14 +72,23 @@
                                                 <outlet property="delegate" destination="Lp0-Qh-59D" id="E9K-tG-Js2"/>
                                             </connections>
                                         </collectionView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d8M-r5-7x3">
+                                            <rect key="frame" x="143" y="49" width="93" height="46"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
                                 </view>
                                 <constraints>
-                                    <constraint firstItem="CFG-tA-eT6" firstAttribute="top" secondItem="Lp0-Qh-59D" secondAttribute="topMargin" constant="-8" id="J2W-oX-Mz3"/>
-                                    <constraint firstAttribute="trailingMargin" secondItem="CFG-tA-eT6" secondAttribute="trailing" constant="-8" id="epT-d7-nUM"/>
-                                    <constraint firstItem="CFG-tA-eT6" firstAttribute="leading" secondItem="Lp0-Qh-59D" secondAttribute="leadingMargin" constant="-8" id="mvi-lM-def"/>
-                                    <constraint firstAttribute="bottomMargin" secondItem="CFG-tA-eT6" secondAttribute="bottom" constant="-8" id="vdf-li-bw0"/>
+                                    <constraint firstAttribute="bottomMargin" secondItem="CFG-tA-eT6" secondAttribute="bottom" constant="96" id="A8B-eg-RNT"/>
+                                    <constraint firstItem="d8M-r5-7x3" firstAttribute="top" secondItem="Lp0-Qh-59D" secondAttribute="topMargin" constant="-19" id="JLB-2i-7Vr"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="CFG-tA-eT6" secondAttribute="trailing" id="SgQ-JO-dgB"/>
+                                    <constraint firstItem="CFG-tA-eT6" firstAttribute="top" secondItem="Lp0-Qh-59D" secondAttribute="topMargin" constant="140" id="Sk7-mc-ld8"/>
+                                    <constraint firstItem="CFG-tA-eT6" firstAttribute="leading" secondItem="Lp0-Qh-59D" secondAttribute="leadingMargin" id="rtI-pV-D54"/>
+                                    <constraint firstItem="d8M-r5-7x3" firstAttribute="leading" secondItem="Lp0-Qh-59D" secondAttribute="leadingMargin" constant="45" id="xah-eB-OwY"/>
                                 </constraints>
+                                <viewLayoutGuide key="safeArea" id="PCt-LW-GR8"/>
                                 <connections>
                                     <outlet property="collectionView" destination="CFG-tA-eT6" id="yei-KE-ksr"/>
                                 </connections>
@@ -92,10 +102,10 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fby-y4-HoJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-77" y="1715"/>
+            <point key="canvasLocation" x="203" y="1815"/>
         </scene>
     </scenes>
     <resources>
-        <image name="Iceland 1.jpg" width="16" height="16"/>
+        <image name="Amy_POS_L" width="144" height="216"/>
     </resources>
 </document>
