@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="tvOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -32,8 +31,9 @@
                                     <rect key="frame" x="0.0" y="0.0" width="1920" height="533"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <collectionView multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="CFG-tA-eT6">
+                                        <collectionView multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="CFG-tA-eT6">
                                             <rect key="frame" x="98" y="208" width="1724" height="221"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="50" minimumInteritemSpacing="0.0" id="LXG-cB-gfR">
                                                 <size key="itemSize" width="308" height="378"/>
                                                 <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -72,22 +72,15 @@
                                                 <outlet property="delegate" destination="Lp0-Qh-59D" id="E9K-tG-Js2"/>
                                             </connections>
                                         </collectionView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d8M-r5-7x3">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d8M-r5-7x3">
                                             <rect key="frame" x="143" y="49" width="93" height="46"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                 </view>
-                                <constraints>
-                                    <constraint firstAttribute="bottomMargin" secondItem="CFG-tA-eT6" secondAttribute="bottom" constant="96" id="A8B-eg-RNT"/>
-                                    <constraint firstItem="d8M-r5-7x3" firstAttribute="top" secondItem="Lp0-Qh-59D" secondAttribute="topMargin" constant="-19" id="JLB-2i-7Vr"/>
-                                    <constraint firstAttribute="trailingMargin" secondItem="CFG-tA-eT6" secondAttribute="trailing" id="SgQ-JO-dgB"/>
-                                    <constraint firstItem="CFG-tA-eT6" firstAttribute="top" secondItem="Lp0-Qh-59D" secondAttribute="topMargin" constant="140" id="Sk7-mc-ld8"/>
-                                    <constraint firstItem="CFG-tA-eT6" firstAttribute="leading" secondItem="Lp0-Qh-59D" secondAttribute="leadingMargin" id="rtI-pV-D54"/>
-                                    <constraint firstItem="d8M-r5-7x3" firstAttribute="leading" secondItem="Lp0-Qh-59D" secondAttribute="leadingMargin" constant="45" id="xah-eB-OwY"/>
-                                </constraints>
                                 <viewLayoutGuide key="safeArea" id="PCt-LW-GR8"/>
                                 <connections>
                                     <outlet property="collectionView" destination="CFG-tA-eT6" id="yei-KE-ksr"/>

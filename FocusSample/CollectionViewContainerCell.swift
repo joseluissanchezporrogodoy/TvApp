@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CollectionViewContainerCell: UICollectionViewCell, UICollectionViewDataSource, UICollectionViewDelegate {
+class CollectionViewContainerCell: UICollectionViewCell, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     // MARK: Properties
     
     static let reuseIdentifier = "CollectionViewContainerCell"
@@ -55,5 +55,32 @@ class CollectionViewContainerCell: UICollectionViewCell, UICollectionViewDataSou
         // Configure the cell.
         //cellComposer.compose(cell, withDataItem: item)
     }
+    
+     // MARK: ManageFocusedCell
+    func collectionView(_ collectionView: UICollectionView, didUpdateFocusIn context: UICollectionViewFocusUpdateContext, with coordinator: UIFocusAnimationCoordinator) {
+         collectionView.bringSubview(toFront: context.nextFocusedView!)
+    }
+    
+   
+    
+    // MARK: UICollectionViewDelegateFlowLayout
+    
+    /// Esto es el tamaño de las celdas
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: 150.0, height: 223.0)
+    }
+    /// Esto es el espaciado entre secciones, en este caso es el espacio ente Celdas
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return 75
+    }
+    
+//    /// Con esto hacemos un "padding" de las filas
+//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+//        return UIEdgeInsets(top: 10, left: 20, bottom: 100, right: 0)
+//    }
+//    /// Con esto cambio el espaciado entre las celdas
+//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+//        return 100
+//    }
 }
 

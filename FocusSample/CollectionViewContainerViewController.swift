@@ -12,12 +12,7 @@ class CollectionViewContainerViewController: UICollectionViewController {
     // MARK: Properties
     
     private static let minimumEdgePadding = CGFloat(90.0)
-    //let model: Array<Any> = generateModel()
-//    private let dataItemsByGroup: [[DataItem]] = {
-//        return DataItem.Group.allGroups.map { group in
-//            return DataItem.sampleItems.filter { $0.group == group }
-//        }
-//    }()
+
     private let dataItemsByGroup: [[DataItem]] = generateModel()
     
     // MARK: UIViewController
