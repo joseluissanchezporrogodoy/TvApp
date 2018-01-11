@@ -64,5 +64,20 @@ class CollectionViewContainerViewController: UICollectionViewController {
          */
         return false
     }
+    
+    //Detectar pulsar hacia atrás la tecla menú
+    override func pressesBegan(_ presses: Set<UIPress>, with event: UIPressesEvent?) {
+        for press in presses {
+            switch press.type {
+            case .menu:
+                break
+            default:
+                // Si queremos irnos de la view
+                super.pressesBegan(presses, with: event)
+            }
+        }
+    }
+    
+    
 }
 

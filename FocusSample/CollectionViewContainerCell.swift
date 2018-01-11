@@ -52,13 +52,22 @@ class CollectionViewContainerCell: UICollectionViewCell, UICollectionViewDataSou
         let item: DataItem = dataItems[(indexPath as NSIndexPath).row] as! DataItem
         cell.imageView.image = item.image
         cell.label.text = "Destacado"
+        // Para que las celdas que se crean al final de la tira estén detrás.
+        collectionView.sendSubview(toBack: cell)
         // Configure the cell.
         //cellComposer.compose(cell, withDataItem: item)
     }
     
      // MARK: ManageFocusedCell
     func collectionView(_ collectionView: UICollectionView, didUpdateFocusIn context: UICollectionViewFocusUpdateContext, with coordinator: UIFocusAnimationCoordinator) {
-         collectionView.bringSubview(toFront: context.nextFocusedView!)
+        
+        if context.previouslyFocusedView != nil {
+            collectionView.sendSubview(toBack: context.previouslyFocusedView!)
+        }
+        
+        collectionView.bringSubview(toFront: context.nextFocusedView!)
+        
+        
     }
     
    
