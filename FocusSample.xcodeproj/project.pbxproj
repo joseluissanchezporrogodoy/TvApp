@@ -8,18 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		6FCCC2AA20074F4E00DD01CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FCCC2A920074F4E00DD01CE /* AppDelegate.swift */; };
-		6FCCC2AC20074F4E00DD01CE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FCCC2AB20074F4E00DD01CE /* ViewController.swift */; };
 		6FCCC2AF20074F4E00DD01CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6FCCC2AD20074F4E00DD01CE /* Main.storyboard */; };
 		6FCCC2B120074F4F00DD01CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6FCCC2B020074F4F00DD01CE /* Assets.xcassets */; };
+		6FCCC2C5200755AC00DD01CE /* CollectionViewContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FCCC2BC2007506600DD01CE /* CollectionViewContainerViewController.swift */; };
+		6FCCC2C6200755AC00DD01CE /* CollectionViewContainerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FCCC2BE2007507F00DD01CE /* CollectionViewContainerCell.swift */; };
+		6FCCC2C7200755AC00DD01CE /* DataItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FCCC2C02007541C00DD01CE /* DataItemCollectionViewCell.swift */; };
+		6FCCC2C92007574D00DD01CE /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FCCC2C82007574D00DD01CE /* Model.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		6FCCC2A620074F4E00DD01CE /* FocusSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FocusSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FCCC2A920074F4E00DD01CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6FCCC2AB20074F4E00DD01CE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		6FCCC2AE20074F4E00DD01CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6FCCC2B020074F4F00DD01CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6FCCC2B220074F4F00DD01CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6FCCC2BC2007506600DD01CE /* CollectionViewContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewContainerViewController.swift; sourceTree = "<group>"; };
+		6FCCC2BE2007507F00DD01CE /* CollectionViewContainerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewContainerCell.swift; sourceTree = "<group>"; };
+		6FCCC2C02007541C00DD01CE /* DataItemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataItemCollectionViewCell.swift; sourceTree = "<group>"; };
+		6FCCC2C82007574D00DD01CE /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,10 +59,13 @@
 			isa = PBXGroup;
 			children = (
 				6FCCC2A920074F4E00DD01CE /* AppDelegate.swift */,
-				6FCCC2AB20074F4E00DD01CE /* ViewController.swift */,
 				6FCCC2AD20074F4E00DD01CE /* Main.storyboard */,
 				6FCCC2B020074F4F00DD01CE /* Assets.xcassets */,
 				6FCCC2B220074F4F00DD01CE /* Info.plist */,
+				6FCCC2BC2007506600DD01CE /* CollectionViewContainerViewController.swift */,
+				6FCCC2BE2007507F00DD01CE /* CollectionViewContainerCell.swift */,
+				6FCCC2C02007541C00DD01CE /* DataItemCollectionViewCell.swift */,
+				6FCCC2C82007574D00DD01CE /* Model.swift */,
 			);
 			path = FocusSample;
 			sourceTree = "<group>";
@@ -132,7 +141,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6FCCC2AC20074F4E00DD01CE /* ViewController.swift in Sources */,
+				6FCCC2C92007574D00DD01CE /* Model.swift in Sources */,
+				6FCCC2C5200755AC00DD01CE /* CollectionViewContainerViewController.swift in Sources */,
+				6FCCC2C6200755AC00DD01CE /* CollectionViewContainerCell.swift in Sources */,
+				6FCCC2C7200755AC00DD01CE /* DataItemCollectionViewCell.swift in Sources */,
 				6FCCC2AA20074F4E00DD01CE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
